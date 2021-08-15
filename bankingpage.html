@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking Page</title>
+  <!-- tailwind css link -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- external css link -->
+  <link rel="stylesheet" href="css/bank.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1 class="text-5xl mt-8 text-center">Let's Get <span class="font-semibold text-purple-800">Money!!</span></h1>
+  </header>
+  <main>
+    <!-- diposit and transaction starts -->
+    <section class="mt-12 md:mx-12">
+      <!-- grid container starts -->
+      <div class="md:grid grid-cols-3 gap-2">
+        <!-- grid item1 starts -->
+        <div class="bg-green-300 w-10/12 p-8 rounded my-style-deposit">
+          <h1 class="text-2xl text-white">Diposit</h1>
+          <h1 class="text-4xl text-white">$<span id="deposit-show">00</span></h1>
+        </div>
+        <!-- grid item1 ends -->
+        <!-- grid item2 starts -->
+        <div class="bg-blue-300 w-10/12 p-8 rounded my-style-withdraw">
+          <h1 class="text-2xl text-white">Withdraw</h1>
+          <h1 class="text-4xl text-white">$<span id="withdraw-show">00</span></h1>
+        </div>
+        <!-- grid item2 ends -->
+        <!-- grid item3 starts -->
+        <div class="bg-pink-300 w-10/12 p-8 rounded my-style-balance">
+          <h1 class="text-2xl text-white">Balance</h1>
+          <h1 class="text-4xl text-white">$<span id="balance-show">1200</span></h1>
+        </div>
+        <!-- grid item3 ends -->
+      </div>
+      <!-- grid container ends -->
+    </section>
+    <!-- diposit and transaction ends -->
+    <!-- deposit and withdraw starts -->
+    <section class="my-8 md:mx-12">
+      <!-- grid container starts -->
+      <div class="md:grid grid-cols-2">
+        <!-- grid item1 starts -->
+        <div class="bg-yellow-100 p-8 rounded w-10/12 my-style-deposit-value">
+          <h1 class="text-2xl font-medium">Please Deposit</h1>
+          <input class="border block my-3 w-11/12 border-gray-600 rounded border-solid pl-1.5" type="text" id="diposit"
+            placeholder="enter amount">
+          <button id="deposit-button" class="bg-pink-500 px-3 py-0.5 rounded text-white font-medium">Deposit</button>
+        </div>
+        <!-- grid item1 ends -->
+        <!-- grid item2 starts -->
+        <div class="bg-purple-100 p-8 rounded w-10/12 my-style-withdraw-value">
+          <h1 class="text-2xl font-medium">Please Withdraw</h1>
+          <input class="border block my-3 w-11/12 border-gray-600 rounded border-solid pl-1.5" type="text" id="withdraw"
+            placeholder="enter amount">
+          <button id="withdraw-button" class="bg-pink-500 px-3 py-0.5 rounded text-white font-medium">Withdraw</button>
+        </div>
+        <!-- grid item2 ends -->
+      </div>
+      <!-- grid container starts -->
+    </section>
+    <!-- deposit and withdraw  ends-->
+  </main>
+
+
+  <!-- external application of js -->
+  <script src="js/bank.js" type="text/javascript"></script>
+</body>
+
+</html>

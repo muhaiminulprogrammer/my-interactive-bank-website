@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City bank</title>
+  <!-- tailwind css link -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- external css link -->
+  <link rel="stylesheet" href="css/city.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1 class="text-5xl mt-16 text-center">Welcome To <span class="font-semibold text-purple-800 my-style">City
+        Bank</span></h1>
+  </header>
+
+  <main>
+    <section class="mt-5 bg-green-100 md:mx-12 p-8 rounded">
+      <h1 class="text-2xl font-medium">Please login</h1>
+      <div>
+        <input class="border block my-3 w-11/12 border-gray-600 rounded border-solid pl-1.5" type="email" id="email"
+          placeholder="enter email">
+        <input class="border block my-1.5 w-11/12 border-gray-600 rounded border-solid pl-1.5" type="password"
+          id="password" placeholder="password">
+        <p class="my-1.5 text-red-600 font-medium" id="error-para"></p>
+        <button id="button" class="bg-pink-500 px-3 py-0.5 rounded text-white font-medium">Submit</button>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- external application of js -->
+  <script src="js/city.js"></script>
+</body>
+
+</html>
