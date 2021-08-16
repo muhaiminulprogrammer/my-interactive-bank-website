@@ -15,6 +15,6 @@ document.getElementById("button").addEventListener('click', function () {
   // give an error message
   else {
     const getError = document.getElementById("error-para");
-    getErrorMessage = getError.innerText = "Please enter a valid email and password must be required at least 8 characters";
+    getError.style.visibility = "visible";
   }
 });

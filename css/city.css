@@ -1,4 +1,7 @@
 /* ======media query for small screen ======*/
+  .my-error-style{
+    visibility: hidden;
+  }
 @media only screen and (max-width:768px){
   .my-style{
     display: block;
