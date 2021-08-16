@@ -73,5 +73,6 @@ document.getElementById("withdraw-button").addEventListener('click', function ()
   }
   else {
     alert("Please enter amount in positive number");
+    getWithdraw.value = "";
   }
 });
